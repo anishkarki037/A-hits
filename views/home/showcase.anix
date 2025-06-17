@@ -1,0 +1,37 @@
+// In a new file, e.g., views/health-section.anix
+
+section.health-section {
+  // Left Column
+  div.left-card {
+    div.image-container {
+      img(src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-white-headphones-png-image_14187420.png", alt="headphone")
+    }
+    div.text-content {
+      p "We provide compassionate, personalized mental health care to help you navigate lifes challenges and rediscover peace of mind."
+    }
+  }
+
+  // Right Column
+  div.right-card {
+    h3 "Sounds Crisp, So Clear."
+    button.appointment-btn "Pre-Order Now"
+    div.image-container {
+      img(src="https://static.vecteezy.com/system/resources/thumbnails/046/787/059/small_2x/white-earbuds-in-transparent-background-free-png.png", alt="Earbuds")
+    }
+    div.healing-card {
+      p "Your Music Taste Deserves"
+      h4 "The Best Sound"
+    }
+    div.stats-card {
+      div.avatars {
+        img(src="https://i.pravatar.cc/30?img=4")
+        img(src="https://i.pravatar.cc/30?img=5")
+        img(src="https://i.pravatar.cc/30?img=6")
+      }
+      p {
+        span.count "10k+"
+        span.label "Pre-Orders"
+      }
+    }
+  }
+}

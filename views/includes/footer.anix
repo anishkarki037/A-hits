@@ -1,0 +1,76 @@
+// views/footer.anix
+
+footer.site-footer {
+  div.footer-main {
+    // The large, central logo
+    h1.footer-logo 'A-Hits'
+
+    // Navigation links section
+    div.footer-nav {
+      div.nav-column {
+        h5 "Products"
+        a(href="#") "Headphones"
+        a(href="#") "Earbuds"
+        a(href="#") "Speakers"
+        a(href="#") "Accessories"
+      }
+      div.nav-column {
+        h5 "Company"
+        a(href="#") "About Us"
+        a(href="#") "Careers"
+        a(href="#") "Press"
+        a(href="#") "Blog"
+      }
+      div.nav-column {
+        h5 "Support"
+        a(href="#") "Contact Us"
+        a(href="#") "FAQs"
+        a(href="#") "Warranty"
+        a(href="#") "Returns"
+      }
+      div.nav-column {
+        h5 "Legal"
+        a(href="#") "Privacy Policy"
+        a(href="#") "Terms of Service"
+      }
+    }
+  }
+
+  div.footer-bottom {
+    p.copyright "© 2025 A-Hits. All Rights Reserved."
+    div.sociallinks {
+  span.social-text "Follow us on:"
+  
+  // X (Twitter) Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      path(d="M18 6 6 18")
+      path(d="M6 6l12 12")
+    }
+  }
+
+  // TikTok Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      path(d="M16 4H9v10.5a4 4 0 1 1-4-4V8")
+    }
+  }
+
+  // Instagram Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      rect(x="2", y="2", width="20", height="20", rx="5", ry="5")
+      path(d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z")
+      line(x1="17.5", y1="6.5", x2="17.51", y2="6.5")
+    }
+  }
+
+  // Facebook Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      path(d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z")
+    }
+  }
+}
+  }
+}

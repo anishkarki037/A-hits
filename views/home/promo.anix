@@ -1,0 +1,18 @@
+section.earbuds-release {
+  div.release-header {
+    span "THE FUTURE"
+    span "(R)"
+    span "STANDARD"
+  }
+  div.release-content {
+    div.release-text {
+      h2 "SOUND-CORE"
+      p "ULTRA-COMPACT EARBUDS WITH DYNAMIC AUDIO DRIVERS, DELIVERING IMMERSIVE HI-FI SOUND IN A MINIMALIST DESIGN."
+    }
+    div.release-image {
+      // Dummy image for the earbuds
+      img(src="https://static.vecteezy.com/system/resources/thumbnails/046/787/059/small_2x/white-earbuds-in-transparent-background-free-png.png", alt="Modern wireless earbuds")
+      div.pedestal
+    }
+  }
+}

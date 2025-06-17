@@ -1,0 +1,147 @@
+/*
+=================================
+Modern Footer Styles
+=================================
+*/
+
+/* Consider adding this font to your main HTML file for the best look:
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+*/
+
+.site-footer {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+        border-radius: 50px;
+    color: #2b2b2b;
+    min-height: 80vh; /* Makes the footer almost full-page */
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-main {
+    flex-grow: 1; /* Allows this section to fill the available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-size: clamp(4rem, 15vw, 12rem); /* Responsive font size */
+    font-weight: 900;
+    color: #191919;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: -5px;
+    background: -webkit-linear-gradient(45deg, #5d8d8e, #aaa); /* Subtle gradient for a premium feel */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .nav-column h5 {
+    color: #181818;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .nav-column a {
+    display: block;
+    color: #a0a0a0;
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-column a:hover {
+    color: #0f0f0f;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+    gap: 1rem;
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+  }
+  
+  .sociallinks {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between the text and each icon */
+  }
+  
+  .social-text {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.05); /* Light grey background */
+    border-radius: 8px; /* Slightly rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Icon color */
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon svg {
+    stroke: currentColor; /* The SVG will inherit the color from the 'a' tag */
+  }
+  
+  .social-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    color: #000; /* Darker icon color on hover */
+  }
+  
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .site-footer {
+      padding: 3rem 1rem 1rem;
+    }
+    
+    .footer-nav {
+      grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }

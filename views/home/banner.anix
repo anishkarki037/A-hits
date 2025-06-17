@@ -1,0 +1,99 @@
+div.banner-container {
+  
+  div.main-banner {
+    div.banner-content {
+      div.banner-category {
+       
+        span "Class Of Music"
+      }
+      
+      h1.banner-title "Made With"
+      h1.banner-title "Anix"
+      
+      div.banner-sub{
+            div.banner-subtitle "01"
+            div.sub-right{
+                    h2 "So Damn Good"
+                    p.banner-description "Making your dream music come true stay with Sequios Sounds!"
+
+                
+                }
+        
+        }
+    
+      
+      button.banner-cta {
+        span "See Our Docs"
+        span "↗"
+      }
+    }
+    
+    div.banner-image
+    
+ 
+   div.social-links {
+  span.social-text "Follow us on:"
+
+  // X (formerly Twitter) Icon
+ a.social-icon(href="#") "𝕏"
+
+  // TikTok Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      path(d="M16 4H9v10.5a4 4 0 1 1-4-4V8")
+    }
+  }
+
+  // Instagram Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      rect(x="2", y="2", width="20", height="20", rx="5", ry="5")
+      path(d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z")
+      line(x1="17.5", y1="6.5", x2="17.51", y2="6.5")
+    }
+  }
+
+  // Facebook Icon
+  a.social-icon(href="#") {
+    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+      path(d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z")
+    }
+  }
+}
+  }
+  
+  div.sidebar {
+    
+    // div.sidebar-card.colors-card {
+    //   h3.colors-title "Popular Colors"
+    //   div.color-dots {
+    //     div.color-dot.color-blue
+    //     div.color-dot.color-orange
+    //     div.color-dot.color-green
+    //     div.color-dot.color-red
+    //     div.color-dot.color-cyan
+    //   }
+    // }
+    
+    div.sidebar-card.product-card {
+      div.product-header {
+        h3.product-title "New Gen X-Bud"
+        div.product-arrow "↗"
+      }
+      div.product-image
+    }
+    
+    div.sidebar-card.product-card.vr-card {
+      div.product-header {
+        h3.product-title "Light Grey Surface Headphone"
+        div.product-arrow "↗"
+      }
+      div.product-image
+      div.product-rating {
+        span.rating-star "⭐"
+        span "4.7"
+      }
+      p.product-description "Boosted with bass"
+    }
+  }
+}

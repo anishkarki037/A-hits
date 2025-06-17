@@ -1,0 +1,81 @@
+// views/products-section.anix
+
+section.products-section {
+  div.section-header {
+    h2 "Explore Our Products"
+    p "Check out our most popular products and find whats right for you."
+  }
+
+  div.product-grid {
+    div.product-card {
+      div.product-image-container {
+        img(src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-the-smartwatch-banner-png-image_11919210.png", alt="Modern Wristwatch")
+      }
+      div.product-details {
+        h4.product-name "Chrono-Sleek Watch"
+        p.product-description "Elegant and modern timepiece."
+        p.product-price "$299.99"
+      }
+      a.product-link(href="#") {
+        svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+          line(x1="7", y1="17", x2="17", y2="7")
+          polyline(points="7 7 17 7 17 17")
+        }
+      }
+    }
+
+    // Product Card 2
+    div.product-card {
+      div.product-image-container {
+        img(src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-white-headphones-png-image_14187420.png", alt="headphone")
+      }
+      div.product-details {
+        h4.product-name "Cool Anix Silenco"
+        p.product-description "Comfort meets street style."
+        p.product-price "$120.00"
+      }
+      a.product-link(href="#") {
+        svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+          line(x1="7", y1="17", x2="17", y2="7")
+          polyline(points="7 7 17 7 17 17")
+        }
+      }
+    }
+
+    // Product Card 3
+    div.product-card {
+      div.product-image-container {
+        img(src="https://png.pngtree.com/png-vector/20240807/ourmid/pngtree-smart-glasses-png-image_13405391.png", alt="Designer Sunglasses")
+      }
+      div.product-details {
+        h4.product-name "Aura Sunglasses"
+        p.product-description "Protect your eyes in style."
+        p.product-price "$85.50"
+      }
+      a.product-link(href="#") {
+        svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+          line(x1="7", y1="17", x2="17", y2="7")
+          polyline(points="7 7 17 7 17 17")
+        }
+      }
+    }
+
+    // Product Card 4
+    div.product-card {
+      div.product-image-container {
+        img(src="https://png.pngtree.com/png-vector/20240731/ourmid/pngtree-digital-display-equipped-smartwatch-on-no-background-png-image_13162750.png", alt="Wireless Earbuds")
+      }
+      div.product-details {
+        h4.product-name "God damn Watch"
+        p.product-description "So whats the time."
+        p.product-price "$149.00"
+      }
+      a.product-link(href="#") {
+        svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+          line(x1="7", y1="17", x2="17", y2="7")
+          polyline(points="7 7 17 7 17 17")
+        }
+      }
+    }
+  }
+}
