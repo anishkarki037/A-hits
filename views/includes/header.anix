@@ -1,5 +1,3 @@
-// views/header.anix
-
 nav.header-container {
   // Logo on the left
   div.logo {
@@ -7,22 +5,22 @@ nav.header-container {
     span 'hits.'
   }
 
- 
-div.search-container {
-  input(type='text', placeholder='Search products...')
-  
-  button.refresh-btn {
-    svg(xmlns="http://www.w3.org/2000/svg", width="18", height="18", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2.5", stroke-linecap="round", stroke-linejoin="round") {
-      circle(cx="11", cy="11", r="8")
-      line(x1="21", y1="21", x2="16.65", y2="16.65")
+  // Search bar
+  div.search-container {
+    input(type='text', placeholder='Search products...')
+    button.search-btn {
+      // Search Icon SVG
+      svg(xmlns="http://www.w3.org/2000/svg", width="18", height="18", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2.5", stroke-linecap="round", stroke-linejoin="round") {
+        circle(cx="11", cy="11", r="8")
+        line(x1="21", y1="21", x2="16.65", y2="16.65")
+      }
     }
   }
-}
 
   // User actions on the right
   div.user-actions {
-    // Shopping Bag Icon SVG
-    svg.icon(xmlns="http://www.w3.org/2000/svg", width="24", height="24", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
+    // Shopping Bag Icon SVG with an ID for JavaScript
+    svg.icon#cart-button(xmlns="http://www.w3.org/2000/svg", width="24", height="24", viewBox="0 0 24 24", fill="none", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round") {
       path(d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z")
       line(x1="3", y1="6", x2="21", y2="6")
       path(d="M16 10a4 4 0 0 1-8 0")
@@ -37,4 +35,79 @@ div.search-container {
     span.user-name 'Ryman Alex'
     img.profile-img(src='https://i.pravatar.cc/40?u=rymanalex', alt='User profile picture')
   }
+
+  // --- NEW: Cart Popup Structure ---
+  div.cart-popup#cart-popup {
+    div.cart-header {
+      h4 "Your Cart"
+      button.close-cart#close-cart-btn "×"
+    }
+    div.cart-body {
+      // Dummy Item 1
+      div.cart-item {
+        img(src="https://static.vecteezy.com/system/resources/thumbnails/046/787/059/small_2x/white-earbuds-in-transparent-background-free-png.png", alt="Earbuds")
+        div.item-details {
+          span.item-name "Sound-Core Earbuds"
+          span.item-price "$149.00"
+        }
+        span.item-remove "Remove"
+      }
+      // Dummy Item 2
+      div.cart-item {
+        img(src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-white-headphones-png-image_14187420.png", alt="Headphones")
+        div.item-details {
+          span.item-name "Aura HD Headphones"
+          span.item-price "$299.00"
+        }
+        span.item-remove "Remove"
+      }
+    }
+    div.cart-footer {
+      div.subtotal {
+        span "Subtotal"
+        span "$448.00"
+      }
+      a.checkout-btn(href="#") "Proceed to Checkout"
+    }
+  }
+}
+
+// --- NEW: JavaScript for Popup ---
+script {
+  document.addEventListener('DOMContentLoaded', () => {
+    const cartButton = document.getElementById('cart-button');
+    const cartPopup = document.getElementById('cart-popup');
+    const closeCartButton = document.getElementById('close-cart-btn');
+
+    if (cartButton && cartPopup && closeCartButton) {
+      // Function to toggle the cart
+      const toggleCart = (event) => {
+        event.stopPropagation();
+        cartPopup.classList.toggle('is-open');
+      };
+      
+      // Function to close the cart
+      const closeCart = () => {
+        cartPopup.classList.remove('is-open');
+      };
+
+      // Open cart on icon click
+      cartButton.addEventListener('click', toggleCart);
+
+      // Close cart on 'X' button click
+      closeCartButton.addEventListener('click', closeCart);
+
+      // Close cart when clicking outside of it
+      document.addEventListener('click', (event) => {
+        if (cartPopup.classList.contains('is-open') && !cartPopup.contains(event.target)) {
+          closeCart();
+        }
+      });
+      
+      // Prevent clicks inside the cart from closing it
+      cartPopup.addEventListener('click', (event) => {
+          event.stopPropagation();
+      });
+    }
+  });
 }

@@ -7,8 +7,8 @@ div.banner-container {
         span "Class Of Music"
       }
       
-      h1.banner-title "Made With"
-      h1.banner-title "Anix"
+      h1.banner-title "Your Ears"
+      h1.banner-title "Deserves Better!"
       
       div.banner-sub{
             div.banner-subtitle "01"
@@ -22,10 +22,27 @@ div.banner-container {
         }
     
       
-      button.banner-cta {
-        span "See Our Docs"
+      button#cta.banner-cta {
+        span "Order Now"
         span "↗"
       }
+       js:click(#cta) {
+          // 'this' refers to the button element that was clicked
+          const button = this;
+
+          // Change the background color
+          button.style.backgroundColor = '#28a745'; // A nice shade of green
+          button.style.borderColor = '#28a745';
+
+          // Find the first span element inside the button to change its text
+          const textSpan = button.querySelector('span:first-of-type');
+          if (textSpan) {
+            textSpan.textContent = 'Ordered!';
+          }
+          
+          // Optional: Disable the button after it's clicked to prevent multiple orders
+          button.disabled = true;
+        }
     }
     
     div.banner-image

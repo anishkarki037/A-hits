@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 350px;
     grid-template-rows: minmax(0, 1fr); /* Prevents grid items from overflowing the container's height */
     gap: 24px;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .main-banner {
@@ -115,14 +115,14 @@
     transform: translateY(-50%);
     width: 450px;
     height: 450px;
-    background: url('https://justhavit.com.ng/storage/FWrsq5Du9SiydnAEwnylWLZcjco4kgOmEbMrj82B.gif?v=1613688792?w=500&h=500&fit=crop') center/cover;
+    background: url('../img/a-hithero.png') center/cover;
     /* mix-blend-mode: saturation; */
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     z-index: 1;
     object-fit: cover;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .social-links {
@@ -483,6 +483,9 @@
         width: 240px;
         height: 240px;
         right: -70px;
+    }
+    .sub-right h2{
+        font-size: 1.2em;
     }
     
     .banner-category {

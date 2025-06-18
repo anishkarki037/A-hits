@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node core/compiler.js",
     "dev": "nodemon core/dev-server.js",
-    "start": "node core/dev-server.js",
+    "start": "nodemon core/dev-server.js",
     "server": "node backend/astpoint-server.js",
     "ast-gui": "node backend/server.js"
   },
